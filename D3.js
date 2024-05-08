@@ -290,21 +290,42 @@ const characterLenght = starWarsCharacters.length - 1;
 const randomCharacter =
   starWarsCharacters[Math.floor(Math.random() * (0, characterLenght))];
 
-console.log(
-  "Lui è",
-  randomCharacter.name,
-  "è alto",
-  randomCharacter.height,
-  "la sua massa è",
-  randomCharacter.mass,
-  "il colore dei suoi capelli è",
-  randomCharacter.hair_color,
-  "il colore della sua pelle è",
-  randomCharacter.skin_color,
-  "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
-  randomCharacter.eye_color,
-  "è nato",
-  randomCharacter.birth_year,
-  "il suo genere è",
-  randomCharacter.gender
-);
+if (randomCharacter.gender === "female") {
+  console.log(
+    "Lei è",
+    randomCharacter.name,
+    "è alto",
+    randomCharacter.height,
+    "la sua massa è",
+    randomCharacter.mass,
+    "il colore dei suoi capelli è",
+    randomCharacter.hair_color,
+    "il colore della sua pelle è",
+    randomCharacter.skin_color,
+    "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
+    randomCharacter.eye_color,
+    "è nato",
+    randomCharacter.birth_year,
+    "il suo genere è",
+    randomCharacter.gender
+  );
+} else {
+  console.log(
+    "Lui è",
+    randomCharacter.name,
+    "è alto",
+    randomCharacter.height,
+    "la sua massa è",
+    randomCharacter.mass,
+    "il colore dei suoi capelli è",
+    randomCharacter.hair_color,
+    "il colore della sua pelle è",
+    randomCharacter.skin_color,
+    "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
+    randomCharacter.eye_color,
+    "è nato",
+    randomCharacter.birth_year,
+    "il suo genere è",
+    randomCharacter.gender
+  );
+}
