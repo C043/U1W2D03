@@ -294,7 +294,7 @@ if (randomCharacter.gender === "female") {
   console.log(
     "Lei è",
     randomCharacter.name,
-    "è alto",
+    "è alta",
     randomCharacter.height,
     "la sua massa è",
     randomCharacter.mass,
@@ -302,9 +302,9 @@ if (randomCharacter.gender === "female") {
     randomCharacter.hair_color,
     "il colore della sua pelle è",
     randomCharacter.skin_color,
-    "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
+    "ma non la giudichiamo per questo, il colore dei suoi occhi è",
     randomCharacter.eye_color,
-    "è nato",
+    "è nata",
     randomCharacter.birth_year,
     "il suo genere è",
     randomCharacter.gender
