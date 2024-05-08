@@ -252,11 +252,59 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 }
 
 console.log("I personaggi droidi sono:", robotCharacters);
+
 /* --EXTRA-- ESERCIZIO 9
   Utilizzando gli elementi presenti nell'array "femaleCharacters" rimuovi dall'array "charactersNames" le stringhe corrispondenti a personaggi con lo stesso nome.
   Una volta fatto crea un console.log per controllare la proprietà length di "charactersNames" prima e dopo l'operazione.
 */
 
+console.log("ESERCIZIO 9");
+
+console.log(charactersNames);
+console.log(femaleCharacters);
+
+for (let i = 0; i < femaleCharacters.length; i++) {
+  const femaleName = femaleCharacters[i];
+  let count = 0;
+  while (count < charactersNames.length) {
+    const name = charactersNames[count];
+    count++;
+    if (femaleName === name) {
+      const removeName = charactersNames[count];
+      charactersNames.splice(1, 1);
+    } else {
+      console.log(femaleName);
+    }
+  }
+}
+
+console.log(charactersNames);
+
 /* --EXTRA-- ESERCIZIO 10
   Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
 */
+
+console.log("ESERCIZIO 10");
+
+const characterLenght = starWarsCharacters.length - 1;
+const randomCharacter =
+  starWarsCharacters[Math.floor(Math.random() * (0, characterLenght))];
+
+console.log(
+  "Lui è",
+  randomCharacter.name,
+  "è alto",
+  randomCharacter.height,
+  "la sua massa è",
+  randomCharacter.mass,
+  "il colore dei suoi capelli è",
+  randomCharacter.hair_color,
+  "il colore della sua pelle è",
+  randomCharacter.skin_color,
+  "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
+  randomCharacter.eye_color,
+  "è nato",
+  randomCharacter.birth_year,
+  "il suo genere è",
+  randomCharacter.gender
+);
