@@ -261,19 +261,12 @@ console.log("I personaggi droidi sono:", robotCharacters);
 console.log("ESERCIZIO 9");
 
 console.log(charactersNames);
-console.log(femaleCharacters);
 
 for (let i = 0; i < femaleCharacters.length; i++) {
   const femaleName = femaleCharacters[i];
-  let count = 0;
-  while (count < charactersNames.length) {
-    const name = charactersNames[count];
-    count++;
-    if (femaleName === name) {
-      const removeName = charactersNames[count];
-      charactersNames.splice(1, 1);
-    } else {
-      console.log(femaleName);
+  for (let index = 0; index < charactersNames.length; index++) {
+    if (femaleName === charactersNames[index]) {
+      charactersNames.splice(index, 1);
     }
   }
 }
@@ -294,38 +287,38 @@ if (randomCharacter.gender === "female") {
   console.log(
     "Lei è",
     randomCharacter.name,
-    "è alta",
+    ",è alta",
     randomCharacter.height,
-    "la sua massa è",
+    ",la sua massa è",
     randomCharacter.mass,
-    "il colore dei suoi capelli è",
+    ",il colore dei suoi capelli è",
     randomCharacter.hair_color,
-    "il colore della sua pelle è",
+    ",il colore della sua pelle è",
     randomCharacter.skin_color,
     "ma non la giudichiamo per questo, il colore dei suoi occhi è",
     randomCharacter.eye_color,
-    "è nata",
+    ",è nata",
     randomCharacter.birth_year,
-    "il suo genere è",
+    ",il suo genere è",
     randomCharacter.gender
   );
 } else {
   console.log(
     "Lui è",
     randomCharacter.name,
-    "è alto",
+    ",è alto",
     randomCharacter.height,
-    "la sua massa è",
+    ",la sua massa è",
     randomCharacter.mass,
-    "il colore dei suoi capelli è",
+    ",il colore dei suoi capelli è",
     randomCharacter.hair_color,
-    "il colore della sua pelle è",
+    ",il colore della sua pelle è",
     randomCharacter.skin_color,
     "ma non lo giudichiamo per questo, il colore dei suoi occhi è",
     randomCharacter.eye_color,
-    "è nato",
+    ",è nato",
     randomCharacter.birth_year,
-    "il suo genere è",
+    ",il suo genere è",
     randomCharacter.gender
   );
 }
