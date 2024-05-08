@@ -107,7 +107,7 @@ const starWarsCharacters = [
 
 console.log("ESERCIZIO 1");
 
-const charactersNames = [];
+let charactersNames = [];
 console.log("Ecco l'array vuoto:", charactersNames);
 
 /* ESERCIZIO 2
@@ -115,6 +115,15 @@ console.log("Ecco l'array vuoto:", charactersNames);
   Dovrai accedere alla proprietà "name" di ogni oggetto in esso contenuto, e inserirla nell'array "charactersNames" creato precedentemente.
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
+
+console.log("ESERCIZIO 2");
+
+for (let i = 0; i < starWarsCharacters.length; i++) {
+  const names = starWarsCharacters[i].name;
+  charactersNames.push(names);
+}
+
+console.log("Ecco i nomi dei personaggi:", charactersNames);
 
 /* ESERCIZIO 3
   Seguendo i passaggi precedenti crea un nuovo array chiamato "femaleCharacters" e inserisci al suo interno tutti gli oggetti femminili.
